@@ -1,5 +1,5 @@
 from player import Player
 
-class AI_player (Player):
-    def __init__(self):
-        super().__init__()
+class Computer_player (Player):
+    def __init__(self, name):
+        super().__init__(name)
