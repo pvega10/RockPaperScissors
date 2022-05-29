@@ -12,25 +12,19 @@ class Gameplay:
         print ("Welcome to the RPSLS Arena!")
         print (input ("How many user controlled players in this game? "))
         self.game_intro()
+        self.players_choose_item()
         pass
 
-    def players_choose_starters (self):
-        self.human.choose_starter()
-        self.ai.choose_starter()
+    def players_choose_item (self):
+        self.human.choose_item()
+        self.ai.choose_item()
         pass
 
     def game_intro(self):
-        print ("""Ok, here are the rules:
-Rock crushes, Scissors,
-Scissors cuts Paper,
-Paper covers Rock,
-Rock crushes Lizard,
-Lizard poisons Spock,
-Spock smashes Scissors,
-Scissors decapitates Lizard,
-Lizard eats Paper,
-Paper disproves Spock,
-Spock vaporizes Rock """)
+        print ("Ok, here are the rules")
+        game_rules = [ "Rock crushes Scissors","Scissors cuts Paper","Paper covers Rock","Rock crushes Lizard","Lizard poisons Spock","Spock smashes Scissors","Scissors decapitates Lizard","Lizard eats Paper","Paper disproves Spock","Spock vaporizes Rock "]
+        for rules in game_rules:
+             print (rules)
 
         pass
     
