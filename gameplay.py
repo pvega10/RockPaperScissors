@@ -6,9 +6,11 @@ from computer_player import Computer_player
 
 class Gameplay:
     def __init__(self):
+        print ("ROCK, PAPER, SCISSORS, LIZARD, SPOCK")
         print ("Welcome to the RPSLS Arena!")
         self.human = Human(input ("Enter your name "))
         self.ai = Computer_player("Piccard")
+
 
         pass
 
@@ -83,16 +85,18 @@ class Gameplay:
                 games_played += 1  
 
         if human_wins == 2:
-            print (f"{self.human.name} is the victor!")
+            print (f"{self.human.name} wins RPSLS!")
         elif computer_wins == 2:
-            print (f"{self.ai.name} is the victor!")
+            print (f"{self.ai.name} wins RPSLS!")
+
+        print ("GAME OVER")
 
        
         pass
 
 
     def game_intro(self):
-        print ("Ok, here are the rules")
+        print (f"Hello {self.human.name}, here are the rules")
         game_rules = ["Rock crushes Scissors","Scissors cuts Paper","Paper covers Rock","Rock crushes Lizard","Lizard poisons Spock","Spock smashes Scissors","Scissors decapitates Lizard","Lizard eats Paper","Paper disproves Spock","Spock vaporizes Rock "]
         for rules in game_rules:
              print (rules)
@@ -161,9 +165,11 @@ class Gameplay:
                 games_played += 1  
 
         if human_wins == 2:
-            print (f"{self.human.name} is the victor!")
+            print (f"{self.human.name} wins RPSLS!")
         elif human_two_wins == 2:
-            print (f"{self.human_two.name} is the victor!")
+            print (f"{self.human_two.name} wins RPSLS!")
+
+        print ("GAME OVER")
 
         pass
         
