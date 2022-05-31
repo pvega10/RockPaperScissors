@@ -13,7 +13,7 @@ class Gameplay:
         pass
 
     def run_game(self):
-        user_input = int (input ("How many user controlled players in this game? "))
+        user_input = int (input ("How many user controlled players in this game, 1 or 2? "))
         self.game_intro()
         if user_input == 2:
             self.players_choose_item_round_humans()
@@ -102,7 +102,7 @@ class Gameplay:
     # def game_win_scenario (self):
 
     def players_choose_item_round_humans(self):
-        self.human_two = Human ((input ("Please enter name of player 2")))
+        self.human_two = Human ((input ("Please enter name of player 2 ")))
         
         human_wins = 0
         human_two_wins = 0
