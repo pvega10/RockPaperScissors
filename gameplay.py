@@ -105,7 +105,6 @@ class Gameplay:
 
         pass
 
-    # def game_win_scenario (self):
 
     def players_choose_item_round_two_humans(self):
         self.human_two = Human ((input ("Please enter name of player 2 ")))
