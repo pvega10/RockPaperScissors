@@ -9,4 +9,7 @@ class Computer_player (Player):
         print ("Computer AI has chosen")
         self.selected_item = random.choice (self.item_list)
         print (f"{self.name} AI has chosen {self.selected_item}")
+
+    def game_win_counter (self):
+        self.games_won = 0
         
