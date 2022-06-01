@@ -8,6 +8,7 @@ class Gameplay:
     def __init__(self):
         print ("ROCK, PAPER, SCISSORS, LIZARD, SPOCK")
         print ("Welcome to the RPSLS Arena!")
+        print("*************************")
         self.human = Human(input ("Enter your name "))
         self.ai = Computer_player("Piccard")
 
@@ -24,7 +25,6 @@ class Gameplay:
         else:
             self.players_choose_item_round_two_humans()
         
-        # self.game_win_scenario()
         
         
         pass
@@ -36,53 +36,66 @@ class Gameplay:
 
         while human_wins < 2 and computer_wins < 2:
             print(f"Round {games_played + 1} is under way!")
+            print("*************************")
             self.human.choose_item()
             self.ai.choose_item()
             if self.human.selected_item == self.ai.selected_item: 
                 print ("Its a tie!")
+                print("*************************")
                 games_played += 1
             elif self.human.selected_item == "Rock" and self.ai.selected_item == "Scissors":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Paper" and self.ai.selected_item == "Rock":           
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1        
             elif self.human.selected_item == "Scissors" and self.ai.selected_item == "Paper":            
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Rock" and self.ai.selected_item == "Lizard":           
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Lizard" and self.ai.selected_item == "Spock":         
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Spock" and self.ai.selected_item == "Scissors":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Scissors" and self.ai.selected_item == "Lizard":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Lizard" and self.ai.selected_item == "Paper":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Paper" and self.ai.selected_item == "Spock":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Spock" and self.ai.selected_item == "Rock":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             else:
                 print (f"{self.ai.name} wins round {games_played +1}!") 
+                print("*************************")
                 computer_wins += 1
                 games_played += 1  
 
@@ -99,10 +112,12 @@ class Gameplay:
 
     def game_intro(self):
         print (f"Hello {self.human.name}, here are the rules")
+        print("*************************")
         game_rules = ["Rock crushes Scissors","Scissors cuts Paper","Paper covers Rock","Rock crushes Lizard","Lizard poisons Spock","Spock smashes Scissors","Scissors decapitates Lizard","Lizard eats Paper","Paper disproves Spock","Spock vaporizes Rock "]
         for rules in game_rules:
              print (rules)
 
+        print("*************************")
         pass
 
 
@@ -115,53 +130,66 @@ class Gameplay:
 
         while human_wins < 2 and human_two_wins < 2:
             print(f"Round {games_played + 1} is under way!")
+            print("*************************")
             self.human.choose_item()
             self.human_two.choose_item()
             if self.human.selected_item == self.human_two.selected_item: 
                 print ("Its a tie!")
+                print("*************************")
                 games_played += 1
             elif self.human.selected_item == "Rock" and self.human_two.selected_item == "Scissors":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Paper" and self.human_two.selected_item == "Rock":           
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1        
             elif self.human.selected_item == "Scissors" and self.human_two.selected_item == "Paper":            
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Rock" and self.human_two.selected_item == "Lizard":           
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Lizard" and self.human_two.selected_item == "Spock":         
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Spock" and self.human_two.selected_item == "Scissors":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Scissors" and self.human_two.selected_item == "Lizard":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Lizard" and self.human_two.selected_item == "Paper":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Paper" and self.human_two.selected_item == "Spock":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             elif self.human.selected_item == "Spock" and self.human_two.selected_item == "Rock":
                 print (f"{self.human.name} wins round {games_played +1}!")
+                print("*************************")
                 human_wins += 1
                 games_played += 1
             else:
                 print (f"{self.human_two.name} wins round {games_played +1}!") 
+                print("*************************")
                 human_two_wins += 1
                 games_played += 1  
 
@@ -182,55 +210,68 @@ class Gameplay:
         ai_two_wins = 0
         games_played = 0
 
-        while ai_wins < 2 and ai_two_wins < 2:
+        while ai_wins < 5 and ai_two_wins < 5:
             print(f"Round {games_played + 1} is under way!")
+            print("*************************")
             self.ai.choose_item()
             self.ai_two.choose_item()
             if self.ai.selected_item == self.ai_two.selected_item: 
                 print ("Its a tie!")
+                print("*************************")
                 games_played += 1
             elif self.ai.selected_item == "Rock" and self.ai_two.selected_item == "Scissors":
                 print (f"{self.ai.name} wins round {games_played +1}!")
+                print ("*************************")
                 ai_wins += 1
                 games_played += 1
             elif self.ai.selected_item == "Paper" and self.ai_two.selected_item == "Rock":           
                 print (f"{self.ai.name} wins round {games_played +1}!")
+                print ("*************************")
                 ai_wins += 1
                 games_played += 1        
             elif self.ai.selected_item == "Scissors" and self.ai_two.selected_item == "Paper":            
                 print (f"{self.ai.name} wins round {games_played +1}!")
+                print ("*************************")
                 ai_wins += 1
                 games_played += 1
             elif self.ai.selected_item == "Rock" and self.ai_two.selected_item == "Lizard":           
                 print (f"{self.ai.name} wins round {games_played +1}!")
+                print ("*************************")
                 ai_wins += 1
                 games_played += 1
             elif self.ai.selected_item == "Lizard" and self.ai_two.selected_item == "Spock":         
                 print (f"{self.ai.name} wins round {games_played +1}!")
+                print ("*************************")
                 ai_wins += 1
                 games_played += 1
             elif self.ai.selected_item == "Spock" and self.ai_two.selected_item == "Scissors":
                 print (f"{self.ai.name} wins round {games_played +1}!")
+                print ("*************************")
                 ai_wins += 1
                 games_played += 1
             elif self.ai.selected_item == "Scissors" and self.ai_two.selected_item == "Lizard":
                 print (f"{self.ai.name} wins round {games_played +1}!")
+                print ("*************************")
                 ai_wins += 1
                 games_played += 1
             elif self.ai.selected_item == "Lizard" and self.ai_two.selected_item == "Paper":
                 print (f"{self.ai.name} wins round {games_played +1}!")
+                print ("*************************")
                 ai_wins += 1
                 games_played += 1
             elif self.ai.selected_item == "Paper" and self.ai_two.selected_item == "Spock":
                 print (f"{self.ai.name} wins round {games_played +1}!")
+                print ("*************************")
                 ai_wins += 1
                 games_played += 1
             elif self.ai.selected_item == "Spock" and self.ai_two.selected_item == "Rock":
                 print (f"{self.ai.name} wins round {games_played +1}!")
+                print ("*************************")
                 ai_wins += 1
                 games_played += 1
             else:
                 print (f"{self.ai_two.name} wins round {games_played +1}!") 
+                print ("*************************")
                 ai_two_wins += 1
                 games_played += 1  
 

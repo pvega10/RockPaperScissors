@@ -16,8 +16,7 @@ class Human (Player):
         self.selected_item = self.item_list [user_input - 1]
         print (f"{self.name} has chosen {self.selected_item}")
 
-    def game_win_counter (self):
-        self.games_won = 0
+
         
 
     pass

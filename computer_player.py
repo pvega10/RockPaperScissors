@@ -6,10 +6,9 @@ class Computer_player (Player):
         super().__init__(name)
 
     def choose_item(self):
-        print ("Computer AI has chosen")
+        print (f"{self.name} is thinking.....")
         self.selected_item = random.choice (self.item_list)
         print (f"{self.name} AI has chosen {self.selected_item}")
 
-    def game_win_counter (self):
-        self.games_won = 0
-        
+    pass
+
